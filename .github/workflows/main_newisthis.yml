@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'newisthis'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AEEFF5F0912743DBB8295A4CEB7BDCE0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FCA9DF6E22AE4ED7B226B3D6A29FD987 }}
           package: .
