@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout your source code repository
+                git 'https://github.com/your-repo.git'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                // Run Maven build
+                sh 'mvn clean install'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                // Run tests
+                sh 'mvn test'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                // Deploy your application
+                sh 'mvn deploy'
+            }
+        }
+    }
+}
